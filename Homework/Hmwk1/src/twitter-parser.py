@@ -8,7 +8,8 @@ from __future__ import unicode_literals
 from ttp import ttp
 
 p = ttp.Parser()
-result = p.parse("@burnettedmond, you now support #IvoWertzel's tweet parser! https://github.com/edburnett/")
+text = "@burnettedmond, you now support #IvoWertzel's tweet parser! https://github.com/edburnett/ @burnettedmond, you now support #IvoWertzel's tweet parser! https://github.com/edburnett/ @burnettedmond, you now support #IvoWertzel's tweet parser! https://github.com/edburnett/ @burnettedmond, you now support #IvoWertzel's tweet parser! https://github.com/edburnett/"
+result = p.parse(text)
 
 print("Printing reply-to user: " + result.reply)
 print("Printing user mentions: ")
