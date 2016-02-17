@@ -66,9 +66,6 @@ class parser_test(unittest.TestCase):
         result = self.parser.parse(self.text)
         self.assertNotIn(url, result.urls)
 
-
-    
-
 if __name__ == '__main__':
     unittest.main()
 
